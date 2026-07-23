@@ -1,0 +1,28 @@
+# Meridian Credit Union
+
+> Meridian Credit Union is Ontario's largest credit union and one of the largest in Canada — a member-owned financial cooperative headquartered in St. Catharines and Toronto, serving more than 365,000 members with roughly CAD $31 billion in assets under management. Formed in 2005 through the merger of Niagara Credit Union and HEPCOE Credit Union, it is provincially regulated by the Financial Services Regulatory Authority of Ontario (FSRA). Meridian publishes no first-party public developer API and no downloadable OpenAPI specification; consumer-permissioned account-data access today is aggregator-mediated (Plaid connector; Central 1 / Flinks Outbound seam).
+
+## About
+
+- Company profile (API Evangelist): https://raw.githubusercontent.com/api-evangelist/meridian-credit-union/refs/heads/main/apis.yml
+- Website: https://www.meridiancu.ca/
+- LinkedIn: https://www.linkedin.com/company/meridian-credit-union
+
+## APIs
+
+Meridian does not operate a first-party public developer API and publishes no OpenAPI specification. Programmatic, consumer-permissioned access to member account data is available only through third-party aggregators:
+
+- Plaid maintains a Meridian institution connector (aggregator-mediated).
+- The Central 1 / Flinks Outbound seam provides API-based data sharing for member credit unions.
+
+Canada's federal Consumer-Driven Banking (open banking) framework — legislated in 2024 with the Financial Consumer Agency of Canada (FCAC) as overseer — is not yet operational, so Meridian's open-finance participation remains voluntary and aggregator-based.
+
+## Regulatory
+
+- Regulator: Financial Services Regulatory Authority of Ontario (FSRA) — https://www.fsrao.ca/
+- Deposit insurance: Ontario credit-union deposit-insurance scheme (FSRA-administered)
+- Federal open-banking overseer (framework not yet live): Financial Consumer Agency of Canada (FCAC) — https://www.canada.ca/en/financial-consumer-agency.html
+
+## Artifacts
+
+- Domain security probe: https://raw.githubusercontent.com/api-evangelist/meridian-credit-union/refs/heads/main/security/meridian-credit-union-domain-security.yml

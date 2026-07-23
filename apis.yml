@@ -32,14 +32,24 @@ tags:
 - Ontario
 - Data Aggregation
 created: '2026-07-23'
-modified: '2026-07-23'
+modified: '2026-07-23T18:00:00Z'
 specificationVersion: '0.19'
 apis: []
 common:
+- type: DomainSecurity
+  url: security/meridian-credit-union-domain-security.yml
 - type: Website
   url: https://www.meridiancu.ca/
 - type: LinkedIn
   url: https://www.linkedin.com/company/meridian-credit-union
+- type: Support
+  url: https://www.meridiancu.ca/contact-us
+- type: PrivacyPolicy
+  url: https://www.meridiancu.ca/about-meridian/privacy-and-security
+- type: TermsOfService
+  url: https://www.meridiancu.ca/about-meridian/legal/personal-membership-terms-and-conditions
+- type: LLMsTxt
+  url: llms/meridian-credit-union-llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com

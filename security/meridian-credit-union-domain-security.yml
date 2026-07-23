@@ -1,0 +1,16 @@
+generated: '2026-07-23'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.meridiancu.ca
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 23 10:29:08 2026 GMT
+  hsts: false
+domains:
+- domain: meridiancu.ca
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: reject
