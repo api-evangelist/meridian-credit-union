@@ -1,0 +1,81 @@
+aid: meridian-credit-union
+name: Meridian Credit Union
+review:
+  question: Does Meridian Credit Union expose a first-party public developer API or downloadable OpenAPI specification?
+  answer: false
+  date: '2026-07-23'
+  reviewer: API Evangelist
+findings:
+  summary: |
+    Meridian Credit Union — Ontario's largest credit union and a member-owned
+    cooperative (~365,000 members, ~CAD $31B AUM), regulated provincially by the
+    Financial Services Regulatory Authority of Ontario (FSRA), not a Schedule I/II
+    bank — publishes no first-party public developer portal, no developer API, and
+    no downloadable OpenAPI/Swagger specification. The conventional developer
+    subdomain developer.meridiancu.ca does not resolve (DNS ENOTFOUND), and the
+    public website (www.meridiancu.ca) documents no API products. There is no
+    OAuth2/OIDC, API-key, or mTLS-secured public API surface to authenticate against,
+    because no public API is exposed.
+
+    Consumer data access for Meridian is aggregator-mediated, which is the honest
+    and typical posture for a Canadian credit union today. Plaid maintains a Meridian
+    institution connector for consumer-permissioned linking, and the Central 1 /
+    Flinks Outbound seam provides API-based data sharing across member credit unions.
+    Meridian is not a documented FDX participant and has published no stated 1033-style
+    data-access posture; the U.S. Section 1033 rule is not applicable to a Canadian
+    institution.
+
+    Canada's Consumer-Driven Banking (open banking) framework was legislated in 2024
+    (Budget 2024 + Fall Economic Statement 2024, overseen by the FCAC) but is not yet
+    operational, so no mandated open-banking API exists. Meridian's open-finance
+    participation is therefore voluntary and aggregator-based.
+  charter: Ontario credit union (member-owned financial cooperative); provincially regulated by FSRA; not a Schedule I or Schedule II bank
+  firstPartyDeveloperPortal: false
+  developerPortalUrl: ''
+  developerSubdomainProbe:
+    host: developer.meridiancu.ca
+    result: DNS ENOTFOUND (does not resolve)
+  downloadableOpenAPI: false
+  specProvenance: none
+  fdxParticipant: false
+  section1033Posture: not-applicable (Canadian institution; no stated data-access posture published)
+  consumerDrivenBanking: legislated 2024 (FCAC overseer) but not yet operational; no live mandated open-banking API
+  dataAccessModel: aggregator-mediated
+  aggregators:
+    - name: Plaid
+      note: Maintains a Meridian institution connector for consumer-permissioned account-data linking.
+      url: https://plaid.com/institutions/meridian/
+    - name: Flinks (via Central 1 Outbound)
+      note: Central 1 partnered with Flinks Outbound to give member credit unions API-based data sharing; screen-scraping being migrated toward API access.
+  authModel: none (no public API surface)
+  transports:
+    - protocol: REST
+      documented: false
+      note: No documented first-party public REST API.
+    - protocol: OpenAPI
+      documented: false
+      note: No downloadable OpenAPI/Swagger specification published.
+sources:
+  - url: https://www.meridiancu.ca/
+    type: Website
+    note: Official site (redirects to /personal); no developer portal or API product documentation.
+  - url: https://www.meridiancu.ca/about-meridian/who-we-are-governance-and-leadership/fast-facts
+    type: About
+    note: Fast facts — ~365,000 members, ~CAD $31B AUM, 2,200+ employees, 75+ years, HQ St. Catharines & Toronto.
+  - url: https://en.wikipedia.org/wiki/Meridian_Credit_Union
+    type: Reference
+    note: Formed 2005 (Niagara + HEPCOE merger); subsidiary Meridian OneCap; former digital bank motusbank (wound down 2023).
+  - url: https://plaid.com/institutions/meridian/
+    type: Aggregator
+    note: Plaid Meridian institution connector — aggregator-mediated consumer-permissioned data access.
+  - url: https://developer.meridiancu.ca
+    type: DeveloperPortalProbe
+    note: Does not resolve (DNS ENOTFOUND) — no first-party developer portal.
+actions:
+  apisYmlUpdated: true
+  reason: |
+    Identity-only bootstrap. No first-party public API, developer portal, or
+    downloadable specification exists to harvest; apis[] is intentionally empty and
+    honest. Data-access reality (aggregator-mediated via Plaid and Central 1/Flinks
+    Outbound) and Canada's not-yet-operational Consumer-Driven Banking posture are
+    recorded here rather than fabricated as API entries.

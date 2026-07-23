@@ -1,0 +1,45 @@
+aid: meridian-credit-union
+url: https://raw.githubusercontent.com/api-evangelist/meridian-credit-union/refs/heads/main/apis.yml
+name: Meridian Credit Union
+kind: company
+description: >-
+  Meridian Credit Union is Ontario's largest credit union and one of the largest
+  in Canada — a member-owned financial cooperative headquartered in St. Catharines
+  and Toronto, serving more than 365,000 members with roughly CAD $31 billion in
+  assets under management, over 2,200 employees, and more than 75 years of history.
+  Formed in 2005 through the merger of Niagara Credit Union and HEPCOE Credit Union,
+  Meridian offers personal, business, and wealth banking and owns Meridian OneCap
+  Credit Corp. (commercial equipment leasing and financing); it previously operated
+  the federally chartered digital bank motusbank, which was wound down in 2023. As a
+  provincially regulated Ontario credit union — overseen by the Financial Services
+  Regulatory Authority of Ontario (FSRA), with member deposits insured under Ontario's
+  credit-union deposit-insurance scheme — Meridian is a cooperative, not a Schedule I
+  or Schedule II bank. It publishes no first-party public developer API and no
+  downloadable OpenAPI specification. Consumer-permissioned account-data access today
+  is aggregator-mediated rather than first-party: Plaid maintains a Meridian institution
+  connector, and the Central 1 / Flinks Outbound seam provides API-based data sharing
+  for member credit unions. Canada's federal Consumer-Driven Banking framework
+  (legislated in 2024 with the Financial Consumer Agency of Canada / FCAC as overseer)
+  is not yet operational, so Meridian's open-finance participation remains voluntary and
+  aggregator-based.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Financial Services
+- Banking
+- Canada
+- Credit Union
+- Cooperative
+- Ontario
+- Data Aggregation
+created: '2026-07-23'
+modified: '2026-07-23'
+specificationVersion: '0.19'
+apis: []
+common:
+- type: Website
+  url: https://www.meridiancu.ca/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/meridian-credit-union
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
