@@ -33,7 +33,7 @@ tags:
 - Data Aggregation
 created: '2026-07-23'
 modified: '2026-07-23T18:00:00Z'
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 apis: []
 common:
 - type: DomainSecurity
