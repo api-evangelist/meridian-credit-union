@@ -11,6 +11,11 @@ checked:
 - https://n8n.io/integrations/meridian-credit-union/
 - https://registry.financialdataexchange.org/
 - https://zapier.com/apps/meridian-credit-union/integrations
+- https://www.bankofcanada.ca/core-functions/retail-payments-supervision/psp-registry/
+- https://www.bankofcanada.ca/rps-api/cif2/accounts/list
+- https://www.payments.ca/payment-resources/directories?field_directory_type=10
+- https://www.payments.ca/payment-resources/directories?field_directory_type=13
+- https://www.payments.ca/payment-resources/directories?field_directory_type=14
 summary: null
 marketplace_apps: []
 edges:
@@ -38,4 +43,36 @@ edges:
     detected: '2026-10-14'
   detected_by: sweep-fdx.py
   first_seen: '2026-10-14'
+- partner_name: Payments Canada members and payment system participants
+  partner: null
+  partner_match: register
+  type: register
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.payments.ca/payment-resources/directories
+  category: Payments Canada membership / ACSS / Lynx participation
+  contract_reference:
+    register: Payments Canada members and payment system participants
+    spec_file: null
+    standard: null
+    role: payment-system-member
+    registrations:
+    - registered_name: Meridian Credit Union Limited
+      register_status: member
+      register_country: CA
+      register_id: '837'
+      matched_domain: meridiancu.ca
+      matched_by: domain
+      licences:
+      - Payments Canada member
+      member_class: Local cooperative credit society
+      identity: wikidata Q6819303 'Meridian Credit Union' P856 https://www.meridiancu.ca/
+    signal_note: 'participation only: a regulator registration / payment-system membership; no API conformance is
+      published by this register'
+    detected_by: sweep-canada-rpaa-psp-registry.py
+    detected: '2026-10-22'
+    identity_source: wikidata P856 (labelled provenance step; Kin 2026-10-15 decision 1)
+  detected_by: sweep-canada-rpaa-psp-registry.py
+  first_seen: '2026-10-22'
 templates: []
