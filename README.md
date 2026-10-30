@@ -1,4 +1,4 @@
-# Meridian Credit Union (meridian-credit-union)
+# Meridian Credit Union
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,46 +64,82 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Meridian Credit Union is Ontario's largest credit union and one of the largest in Canada — a member-owned financial cooperative headquartered in St. Catharines and Toronto, serving more than 365,000 members with roughly CAD $31 billion in assets under management, over 2,200 employees, and more than 75 years of history. Formed in 2005 through the merger of Niagara Credit Union and HEPCOE Credit Union, it offers personal, business, and wealth banking, owns Meridian OneCap Credit Corp. (commercial equipment leasing), and previously operated the digital bank motusbank (wound down in 2023).
+Meridian Credit Union is Ontario's largest credit union and one of the largest in Canada — a member-owned financial cooperative headquartered in St. Catharines and Toronto, serving more than 365,000 members with roughly CAD $31 billion in assets under management, over 2,200 employees, and more than 75 years of history. Formed in 2005 through the merger of Niagara Credit Union and HEPCOE Credit Union, Meridian offers personal, business, and wealth banking and owns Meridian OneCap Credit Corp. (commercial equipment leasing and financing); it previously operated the federally chartered digital bank motusbank, which was wound down in 2023. As a provincially regulated Ontario credit union — overseen by the Financial Services Regulatory Authority of Ontario (FSRA), with member deposits insured under Ontario's credit-union deposit-insurance scheme — Meridian is a cooperative, not a Schedule I or Schedule II bank. It publishes no first-party public developer API and no downloadable OpenAPI specification. Consumer-permissioned account-data access today is aggregator-mediated rather than first-party: Plaid maintains a Meridian institution connector, and the Central 1 / Flinks Outbound seam provides API-based data sharing for member credit unions. Canada's federal Consumer-Driven Banking framework (legislated in 2024 with the Financial Consumer Agency of Canada / FCAC as overseer) is not yet operational, so Meridian's open-finance participation remains voluntary and aggregator-based.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/meridian-credit-union/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/meridian-credit-union/refs/heads/main/apis.yml)
+**Areas:** Financial Services · Banking · Canada · Credit Union · Cooperative · Ontario
 
-## Tags
+## Meridian Credit Union on APIs.io
 
-- Financial Services
-- Banking
-- Canada
-- Credit Union
-- Cooperative
-- Ontario
-- Data Aggregation
+Everything profiled for Meridian Credit Union is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/meridian-credit-union/](https://apis.io/providers/meridian-credit-union/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-07-23
-- **Modified:** 2026-07-23
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## Open Finance & API Posture
+#### Security (1)
 
-Meridian is a provincially regulated Ontario credit union (overseen by the Financial Services Regulatory Authority of Ontario / FSRA), a cooperative rather than a Schedule I or Schedule II bank. It publishes **no first-party public developer portal, developer API, or downloadable OpenAPI/Swagger specification**. A `developer.meridiancu.ca` host does not resolve, and no API product documentation is exposed on the public website.
+Authentication, trust centre, and vulnerability disclosure.
 
-Consumer-permissioned account-data access is **aggregator-mediated**, which is the honest and common reality for a Canadian credit union today:
+- [Meridian Credit Union Domain Security](https://apis.io/security/meridian-credit-union/meridian-credit-union-domain-security/)
 
-- **Plaid** maintains a Meridian institution connector for consumer-permissioned data linking.
-- The **Central 1 / Flinks Outbound** seam provides API-based data sharing across member credit unions in the Canadian market (screen-scraping being phased toward API access).
+## Where to find this API
 
-Canada's federal **Consumer-Driven Banking (open banking)** framework was legislated in 2024 (Budget 2024 + Fall Economic Statement 2024, with the Financial Consumer Agency of Canada / FCAC as overseer) but is **not yet operational**. There is therefore no live mandated open-banking API; Meridian's participation in open finance remains voluntary and aggregator-based.
-
-## APIs
-
-None. Meridian exposes no documented first-party public API. See the posture note above for the aggregator-mediated data-access reality.
-
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.meridiancu.ca/)
-- [LinkedIn](https://www.linkedin.com/company/meridian-credit-union)
+- [Support](https://www.meridiancu.ca/contact-us)
+- [Terms of service](https://www.meridiancu.ca/about-meridian/legal/personal-membership-terms-and-conditions)
+- [Privacy policy](https://www.meridiancu.ca/about-meridian/privacy-and-security)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 3.2** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 0.0 |
+| Access clarity | 0.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 4.7** — Banking & Open Finance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/meridian-credit-union/](https://apis.io/providers/meridian-credit-union/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Meridian Credit Union: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/meridian-credit-union/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
